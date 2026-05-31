@@ -1,0 +1,31 @@
+HTML:
+Login (iniio de sesion y registro)
+Barra de arriba (menu, logo, buscador, carrito, wishlist, mi cuenta, ajustes)
+	Menu de 🍔
+	Buscador (no funciona como tal, pero puedo hacer que mande a una foto de error)
+	Carrito
+	Wishlist
+	Mi cuenta
+	Ajustes
+	     Modo oscuro
+	     Tamaño de letras
+	     
+Categorias
+	Mujer (no funciona como tal, pero puedo hacer que mande a una foto de error y con sus sub-categorias)
+	Hombre (no funciona como tal, pero puedo hacer que mande a una foto de error y con sus sub-categorias)
+	Niños (no funciona como tal, pero puedo hacer que mande a una foto de error y con sus sub-categorias)
+	Tecnologia (no funciona como tal, pero puedo hacer que mande a una foto de error y con sus sub-categorias)
+	Deportes (no funciona como tal, pero puedo hacer que mande a una foto de error y con sus sub-categorias)
+	jerseys del mundial
+	Ofertas
+
+Productos en tendendia (hacer un tipo carrucel)
+
+
+Pie de pagina
+
+CSS:
+(no si separarlo, ya ni me acuerdo que me dijo key xD)
+
+JAVA:
+(y esto tampoco se si separar JAJAAJAJ)
