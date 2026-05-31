@@ -3,4 +3,4 @@ PIA Interfaz
 
 Hola, soy jahir xD
 
-Estoy haciendo home btw -k
+Primera versión de Home hecho -k
