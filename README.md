@@ -1,7 +1,7 @@
 # PIA-Interfaz
 PIA Interfaz
 
-Hola, soy jahir xD
+Jahir: Primera versión de lla ventana junto a su css, falta acomodar los botones de: mi cuenta, carrito/bolsa, ajustes..., se podrían poner microinteracciones
 
 Primera versión de Home hecho -k
 

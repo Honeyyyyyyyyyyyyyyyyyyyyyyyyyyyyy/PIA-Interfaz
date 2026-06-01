@@ -1,1 +1,93 @@
-//cosas de la Wishlist
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Mi Wishlist | Liverpool</title>
+    <link rel="stylesheet" href="visual Wishlist.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-main">
+            <button class="mobile-menu-toggle">☰</button>
+
+            <a href="pagina de inicio.html" class="site-logo">
+                <img src="Imagenes/Logo_liverpool.png" alt="Liverpool" onerror="this.style.display='none'">
+                <span>Liverpool</span>
+            </a>
+
+            <form class="search-form">
+                <input type="search" placeholder="¿Qué estás buscando?">
+                <button type="submit">🔍</button>
+            </form>
+
+            <div class="header-icons">
+                <a href="bolsa.html" class="cart-button" aria-label="Ir al carrito de compras">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+
+                <a href="Wishlist.html" class="header-icon active" aria-label="Favoritos">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+
+                <a href="Mi cuenta.html" class="header-icon" aria-label="Mi cuenta">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+
+                <a href="#" class="header-icon" aria-label="Configuración">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="wishlist-container">
+        
+        <div class="wishlist-card-header">
+            <div class="wishlist-title-block">
+                <h2>Mi Wishlist</h2>
+                <span class="creation-date">Creada el 2 mar 2026</span>
+            </div>
+            <button class="options-menu-btn" aria-label="Opciones de la lista">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+        </div>
+
+        <div class="wishlist-table-label">
+            <span>Nombre</span>
+        </div>
+
+        <!-- WISHLIST ITEM CARD -->
+        <div class="wishlist-item-card">
+            <div class="item-main-info">
+                <div class="item-image-wrapper">
+                    <img src="Imagenes/niña_cocina.jpg" alt="Juguetes">
+                </div>
+                
+                <div class="item-details">
+                    <h3 class="item-title">Cocina de Juguete Infantil Interactiva</h3>
+                    <p class="item-size">Categoría: Juguetes</p>
+                </div>
+            </div>
+
+            <div class="item-actions-wrapper">
+                <div class="action-buttons">
+                    <button class="btn-move-to-bag">Mover a la bolsa</button>
+                    <button class="btn-buy-now">Comprar ahora</button>
+                </div>
+                <button class="item-options-btn" aria-label="Opciones del producto">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Liverpool</p>
+    </footer>
+
+</body>
+</html>
