@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container{
+    background: white;
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.login-container h2{
+    color: #E5008D;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input:focus{
+    outline: none;
+    border-color: #E5008D;
+    box-shadow: 0 0 8px rgba(229, 0, 141, 0.3);
+}
+
+button{
+    background: #E5008D;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #c70079;
+    transform: translateY(-2px);
+}
+
+button:active{
+    transform: translateY(0);
+}
+
+#mensaje{
+    display: none;
+
+    padding: 10px;
+    margin-top: 15px;
+
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mensaje-error{
+    background-color: #ffe5e5;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+}
+
+.mensaje-exito{
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #2e7d32;
+}
+
+@media (max-width: 480px){
+
+    .login-container{
+        width: 90%;
+        padding: 30px;
+    }
+
+}
+
+.logo-liverpool{
+    background: #E5008D;
+
+    margin: -40px -40px 25px -40px;
+
+    padding: 15px;
+
+    border-radius: 15px 15px 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo-liverpool img{
+    width: 50px;
+    height: auto;
+}
+
+.logo-liverpool span{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.login-container h2{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.opciones-login{
+    text-align: right;
+    margin-top: -5px;
+}
+
+.opciones-login a{
+    color: #E5008D;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.opciones-login a:hover{
+    text-decoration: underline;
+}
+
+.registro{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.registro a{
+    color: #E5008D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.registro a:hover{
+    text-decoration: underline;
+}
+
+.password-container{
+    position: relative;
+    width: 100%;
+}
+
+.password-container input{
+    width: 100%;
+    padding-right: 50px;
+}
+
+.btn-ver{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-size: 18px;
+    padding: 0;
+}

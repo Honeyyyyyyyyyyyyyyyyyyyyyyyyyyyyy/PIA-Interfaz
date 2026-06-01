@@ -1,1 +1,70 @@
-//cosas para el login
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <link rel="stylesheet" href="visual login.css">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <div class="logo-liverpool">
+            <img src="Imagenes/Logo_liverpool.png" alt="Liverpool">
+            <span>Liverpool</span>
+        </div>
+
+        <h2>Iniciar Sesión</h2>
+
+        <form id="loginForm">
+
+            <input
+                type="email"
+                id="correo"
+                placeholder="Correo electrónico"
+                maxlength="100"
+                required
+            >
+
+            <div class="password-container">
+            <input
+                type="password"
+                id="password"
+                placeholder="Contraseña"
+                minlength="6"
+                maxlength="50"
+                required
+            >
+
+                <button
+                    type="button"
+                    id="verPassword"
+                    class="btn-ver"
+                >
+                    👁️
+                </button>
+            </div>
+
+            <div class="opciones-login">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <p id="mensaje"></p>
+
+            <p class="registro">
+                ¿No tienes cuenta?
+                <a href="registro.html">Crear cuenta</a>
+            </p>
+
+            
+        </form>
+    </div>
+
+    <script src="interacciones.js"></script>
+
+</body>
+</html>
