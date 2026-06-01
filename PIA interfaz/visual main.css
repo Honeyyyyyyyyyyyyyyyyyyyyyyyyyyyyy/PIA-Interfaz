@@ -10,8 +10,9 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:#ececec;
+    background:#f4f4f4;
     color:#222;
+    animation: aparecerPantalla 0.8s ease-out forwards; /*ANIMACIONDE LOGIN A MAIN*/
 }
 
 /* ==========================
@@ -19,47 +20,82 @@ body{
 ========================== */
 
 .hero-banner{
-    background:#93001d;
-    min-height:500px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:60px;
-    position:relative;
-    overflow:hidden;
+    width: 92%;
+    max-width: 1800px;
+    margin: 40px auto;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 32px;
+    background:
+    radial-gradient(
+        circle at top left,
+        #ff3cac 0%,
+        #e5008d 40%,
+        #1a0010 100%
+    );
+
+    box-shadow:
+    0 25px 60px rgba(229,0,141,.25);
 }
 
-.hero-banner div{
+/*.hero-banner div{
     max-width:500px;
     z-index:2;
+}*/
+
+.hero-content{
+    width: 45%;
+    padding: 60px;
 }
 
 .hero-banner h1{
-    color:white;
-    font-size:58px;
-    margin-bottom:20px;
-    font-weight:700;
+    color: white;
+    font-size: 80px;
+    line-height: .95;
+    font-weight: 800;
+    margin-bottom: 25px;
 }
 
 .hero-banner p{
-    color:white;
-    margin-bottom:30px;
-    font-size:20px;
+    color: white;
+    font-size: 20px;
+    opacity: .9;
+    margin-bottom: 30px;
 }
 
 .hero-banner a{
     display:inline-block;
-    background:#e10098;
+    background:linear-gradient(
+        135deg,
+        #ff4fb3,
+        #e5008d
+    );
+
     color:white;
     text-decoration:none;
-    padding:15px 30px;
-    border-radius:8px;
-    font-weight:bold;
+    padding:15px 28px;
+    border-radius:14px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.hero-banner a:hover{
+    transform:translateY(-3px);
 }
 
 .hero-banner img{
-    width:650px;
-    max-width:55%;
+    width: 50%;
+    height: 100%;
+        object-fit: contain; /*la imagen se encoja y quepa completa */
+        padding: 30px; /*Le da un espacio a los lados para que no toque los bordes del banner */
+    transition: .5s;
+}
+
+.hero-banner:hover img{
+    transform: scale(1.03);
 }
 
 /* ==========================
@@ -73,8 +109,8 @@ body{
 
 .products-section h2,
 .gift-section h2{
-    font-size:42px;
-    margin-bottom:35px;
+    font-size:48px;
+    font-weight:800;
 }
 
 /* ==========================
@@ -219,4 +255,73 @@ footer{
     .search-form button{
         display:none;
     }
+}
+
+/* ============================
+   ANIMACION DE LOGIN AL MAIN
+=============================== */
+
+@keyframes aparecerPantalla {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Hace que suba un poquito al aparecer */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   CARRUSEL
+========================== */
+
+/* Contenedor que corta lo que se salga de la pantalla por la derecha */
+.carousel-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Permite scroll horizontal */
+    overflow-y: hidden; /* Evita scrolls raros verticales */
+    padding-bottom: 20px; /* Espacio para que no se corte la sombra de las tarjetas */
+    
+    /* Hace que el deslizamiento en celulares se sienta súper fluido */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Modificamos tu track original para que las tarjetas no se aplasten */
+.product-grid.carousel-track {
+    display: flex; /* Cambiamos grid por flex para alinearlos en fila */
+    grid-template-columns: none; /* Desactivamos tu antigua regla grid */
+    gap: 30px;
+}
+
+/* Forzamos a cada tarjeta a mantener un tamaño fijo dentro del carrusel */
+.carousel-track .product-card {
+    flex: 0 0 320px; /* No se encogen, no crecen, miden exactamente 320px de ancho */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-radius: 18px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-track .product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* DISEÑO PERSONALIZADO PARA LA BARRA DE DESLIZAMIENTO (Opcional) */
+.carousel-wrapper::-webkit-scrollbar {
+    height: 8px; /* Grosor de la barrita de scroll */
+}
+
+.carousel-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb {
+    background: #e10098; /* Rosa Liverpool para la barra */
+    border-radius: 10px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #cc007f;
 }

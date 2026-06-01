@@ -42,7 +42,15 @@ formulario.addEventListener("submit", function(event){
         mensaje.textContent =
             "✅ Inicio de sesión exitoso.";
 
-        // window.location.href = "inicio.html";
+            // 1. Esperamos 1 segundo para que el usuario lea el mensaje de éxito
+            setTimeout(() => {
+                // Le agregamos la clase CSS al contenedor para que empiece a desvanecerse
+                formulario.parentElement.classList.add("desvanecer");
+            }, 1000);
+            // ESPERA 1.5 SEGUNDOS Y TE MANDA A LA TIENDA
+            setTimeout(() => {
+                window.location.href = "pantalla de inicio.html"; 
+            }, 1500);
     }
     else{
 

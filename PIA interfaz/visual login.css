@@ -191,3 +191,10 @@ button:active{
     font-size: 18px;
     padding: 0;
 }
+
+/* Clase que aplicaremos con JS para el desvanecimiento */
+.login-container.desvanecer {
+    opacity: 0;
+    transform: scale(0.95); /* Hace que se encoja un poquito al irse (efecto premium) */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
