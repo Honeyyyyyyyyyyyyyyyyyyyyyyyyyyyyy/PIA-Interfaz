@@ -1,3 +1,162 @@
+/* =================================
+            Body
+==================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#ececec;
+    color:#222;
+}
+
+/*body.large-text{
+    font-size: 1.2rem;
+}
+
+body.large-text h1{
+    font-size: 4rem;
+}
+
+body.large-text h2{
+    font-size: 2.8rem;
+}
+
+body.large-text p,
+body.large-text a,
+body.large-text button{
+    font-size: 1.2rem;
+} */
+
+body.large{
+    /*font-size: 140%;*/
+    zoom: 1.2;
+}
+
+body.xlarge{
+    /*font-size: 160%;*/
+    zoom: 1.4;
+}
+
+body.normal{
+    font-size:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* =================================
+            accesibilidad
+==================================== */
+
+.accessPanel{
+    position:fixed;
+
+    top:85px;
+    right:20px;
+
+    width:320px;
+
+    background:#fff;
+
+    border:none;
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,.15);
+
+    display:none;
+
+    z-index:9999;
+}
+
+/* Flechita que va encima del panel */
+/*.accessPanel::before{
+    content:"";
+
+    position:absolute;
+
+    top:-8px;
+    right:30px;
+
+    width:16px;
+    height:16px;
+
+    background:white;
+
+    transform:rotate(45deg);
+}*/
+
+.accessPanel.show{
+    display:block;
+}
+
+.accessPanel h3{
+    font-size:1.4rem;
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:#222;
+}
+
+.accItem{
+    display:flex;
+    flex-direction:column;
+
+    gap:10px;
+}
+
+.accItem label{
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:.95rem;
+    font-weight:600;
+
+    color:#555;
+}
+
+.accItem select{
+    width:100%;
+
+    padding:12px 14px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    background:#fafafa;
+
+    font-size:1rem;
+
+    transition:.2s;
+}
+
+.accItem select:hover{
+    border-color:#e10098;
+}
+
+.accItem select:focus{
+    outline:none;
+
+    border-color:#e10098;
+
+    background:white;
+
+    box-shadow:
+        0 0 0 4px rgba(225,0,152,.12);
+}
+
 /* ==========================
    HEADER
 ========================== */
@@ -99,4 +258,18 @@
 
 .primary-nav a:hover{
     opacity:.8;
+}
+
+.header-icons a,
+.header-icons button{
+    background:none;
+    border:none;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:28px;
+
+    cursor:pointer;
 }
