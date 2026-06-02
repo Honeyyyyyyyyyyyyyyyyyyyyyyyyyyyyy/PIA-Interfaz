@@ -1,7 +1,7 @@
 # PIA-Interfaz
 PIA Interfaz
 
-Jahir: Primera versión de lla ventana junto a su css, falta acomodar los botones de: mi cuenta, carrito/bolsa, ajustes..., se podrían poner microinteracciones
+Jahir: Categorías de mujer y hombre con menu hamburguesa funcionar (pueden copiar y pegar el js si les jala)
 
 Primera versión de Home hecho -k
 
