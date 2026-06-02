@@ -56,6 +56,29 @@ if (fontSizeSelect) {
 
     });
 }
+//Menu hamburguesa para categoría de mujer, se puede reutilizar...
+document.addEventListener("DOMContentLoaded", () => {
+    const sidebar = document.getElementById("sidebar-menu");
+    const overlay = document.getElementById("sidebar-overlay");
+    const closeBtn = document.getElementById("sidebar-close");
+    const menuBtn = document.querySelector(".mobile-menu-toggle");
+
+    const openMenu = () => {
+        sidebar.classList.add("active");
+        overlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+    };
+
+    const closeMenu = () => {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.style.overflow = "";
+    };
+
+    if (menuBtn) menuBtn.addEventListener("click", openMenu);
+    closeBtn.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
+});
 
 console.log(accBtn);
 console.log(accessPanel);
