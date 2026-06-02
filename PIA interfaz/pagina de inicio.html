@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liverpool</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="visual barra de arriba.css">
     <link rel="stylesheet" href="visual main.css">
 </head>
@@ -37,13 +38,32 @@
 
         </form>
 
-      <div class="header-icons">
+      <!--<div class="header-icons">
 
             <a href="#">🛒</a>
             <a href="#">♡</a>
             <a href="#">👤</a>
             <button id="settings-btn">⚙</button>
-        </div>
+      </div> -->
+
+      <div class="header-icons">
+        <a href="bolsa.html" class="cart-button" aria-label="Ir al carrito de compras">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <a href="Wishlist.html" class="header-icon active" aria-label="Favoritos">
+          <i class="fa-solid fa-heart"></i>
+        </a>
+
+        <a href="Mi cuenta.html" class="header-icon" aria-label="Mi cuenta">
+          <i class="fa-regular fa-user"></i>
+        </a>
+
+        <button id="settings-btn" class="header-icon" aria-label="Configuración">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+
     </div>
 
   </header>
