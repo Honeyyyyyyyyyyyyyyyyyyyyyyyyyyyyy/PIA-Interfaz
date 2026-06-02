@@ -10,8 +10,9 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:#ececec;
+    background:#f4f4f4;
     color:#222;
+    animation: aparecerPantalla 0.8s ease-out forwards; /*ANIMACIONDE LOGIN A MAIN*/
 }
 
 /*body.large-text{
